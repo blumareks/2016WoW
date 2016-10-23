@@ -31,7 +31,7 @@ Double click on the TextField (contains "http://www.huffingtonpost.com/2010/06/2
 
 ### 2. Connect the Button
  1.	Select Touch up Inside from drop-down list
- 2.	Enter speakButtonPressed in the popup dialog.
+ 2.	Enter checkButtonPressed in the popup dialog.
  3.	Insert before the end of the Class ViewController
  4.	Click Connect
  5.	The result is:
