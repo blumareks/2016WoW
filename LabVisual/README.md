@@ -87,9 +87,9 @@ We enter a url to an image file in the text field. This name is printed to the l
 
 We press the Visual Analysis button to see the output in the Log area.
 
-The next steps are:
+## The next steps are:
 - adding the carthage package manager to get Watson Developer Cloud SDK for iOS and running carthage update --platform iOS - see readme.md
-- extending the info.plist with access to watson.net over http
+- extending the info.plist with access to watsonplatform.net over http
 ```xml
 <key>NSAppTransportSecurity</key>
 <dict>
@@ -107,7 +107,10 @@ The next steps are:
 </dict>
 </dict>
 ```
-- getting import with Watson service
+- getting import with Watson service : 
+```swift
+import VisualRecognitionV3
+```
 - getting key to Watson service
 - updating the code with the final part:
 ```swift
@@ -154,15 +157,15 @@ self.analysisTextLabel.text = "1 : " + status
 ```
 
 check these links:
-person with age: http://g1.computerworld.pl/news/thumbnails/2/6/265397_resize_620x460.jpg
-person = https://static.sched.org/a6/1606352/avatar.jpg.320x320px.jpg?3c4
-beach: http://1.bp.blogspot.com/_dWmIOlGB7_0/S9nvqlTPz9I/AAAAAAAADCw/PRmRH_UPseI/s1600/beach+palm+trees+%283%29.jpg
-hiking: http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-park.jpg
-tatry: http://s3.flog.pl/media/foto/5654654_tatry-dolina-pieciu-stawow-polskich-widok-z-gory.jpg
-diving: http://www.nautica.pl/images/phocagallery/safari_warsztat_foto/thumbs/phoca_thumb_l_warsztaty_fotograficzne_egipt2.jpg
-diving: http://www.nautica.pl/images/phocagallery/safari_warsztat_foto/thumbs/phoca_thumb_l_warsztaty_fotograficzne_egipt3.jpg
-camping: http://cospuente.org/images/351.jpg
-skiing: https://murowanica.files.wordpress.com/2013/12/rersdtfghj.jpg
+ - person with age: http://g1.computerworld.pl/news/thumbnails/2/6/265397_resize_620x460.jpg
+ - person = https://static.sched.org/a6/1606352/avatar.jpg.320x320px.jpg?3c4
+ - beach: http://1.bp.blogspot.com/_dWmIOlGB7_0/S9nvqlTPz9I/AAAAAAAADCw/PRmRH_UPseI/s1600/beach+palm+trees+%283%29.jpg
+ - hiking: http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-park.jpg
+ - tatry: http://s3.flog.pl/media/foto/5654654_tatry-dolina-pieciu-stawow-polskich-widok-z-gory.jpg
+ - diving: http://www.nautica.pl/images/phocagallery/safari_warsztat_foto/thumbs/phoca_thumb_l_warsztaty_fotograficzne_egipt2.jpg
+ - diving: http://www.nautica.pl/images/phocagallery/safari_warsztat_foto/thumbs/phoca_thumb_l_warsztaty_fotograficzne_egipt3.jpg
+ - camping: http://cospuente.org/images/351.jpg
+ - skiing: https://murowanica.files.wordpress.com/2013/12/rersdtfghj.jpg
 
 
 My blog: [blumareks blogspot](http://blumareks.blogspot.com/2016/03/blue-reporter-v21-gets-cognitive-in.html)
