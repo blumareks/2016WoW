@@ -17,11 +17,11 @@ Then after we have positioned them to our liking, we will connect the text field
 In the Main.storyboard:
 
 Right-click on the TextField (contains “Hello This is Watson Speaking”)
-1.	Select New Reference Outlet Collection from drop-down list
-2.	Enter speakText in the popup dialog.
-3.	Insert between Class ViewController and override… 
-4.	Click Connect
-5.	The result is: 
+ 1.	Select New Reference Outlet Collection from drop-down list
+ 2.	Enter speakText in the popup dialog.
+ 3.	Insert between Class ViewController and override… 
+ 4.	Click Connect
+ 5.	The result is: 
 ```swift
 @IBOutlet weak var speakText: [UITextField]!
 ```
@@ -30,22 +30,22 @@ Right-click on the TextField (contains “Hello This is Watson Speaking”)
 
 We now connect the Button in the same way.
 Right-click on the TextField (contains “Watson Speaking”)
-1.	Select Touch up Inside from drop-down list
-2.	Enter speakButtonPressed in the popup dialog.
-3.	Insert before the end of the Class ViewController
-4.	Click Connect
-5.	The result is:
+ 1.	Select Touch up Inside from drop-down list
+ 2.	Enter speakButtonPressed in the popup dialog.
+ 3.	Insert before the end of the Class ViewController
+ 4.	Click Connect
+ 5.	The result is:
 ```swift
 @IBAction func speakButtonPressed(sender: AnyObject) {
 }
 ```
 ### 3. Let's add the Segmented Control for voices
 Right-click on the Segmented Control (contains three controls - on the right pane - in the Atributes Inspector - I incresed the number of segments to 3 and added the title "Kate" to the segment no 2)
-1.	Select New Reference Outlet Collection from drop-down list
-2.	Enter voiceSegment in the popup dialog.
-3.	Insert between Class ViewController
-4.	Click Connect
-5.	The result is: 
+ 1.	Select New Reference Outlet Collection from drop-down list
+ 2.	Enter voiceSegment in the popup dialog.
+ 3.	Insert between Class ViewController
+ 4.	Click Connect
+ 5.	The result is: 
 
 ```swift
 @IBOutlet weak var voiceSegment: UISegmentedControl!
