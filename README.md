@@ -68,13 +68,14 @@ This is the list of the framework libraries:
 ![framework libraries for sentiment](https://github.com/blumareks/2016WoW/blob/master/images/SentimentFrameworks.png "framework libraries for sentiment")
 
 and an alternative setup for framework libraries for Text To Speech:
+
 ![framework libraries for TTS](https://github.com/blumareks/2016WoW/blob/master/images/TTSFrameworks.png "framework libraries for TTS")
 
 
 Build target. In the "Build Phases" tab, add a new Copy Files Phase and set its destination to "Frameworks".
 Copy all the frameworks that have been added one by one.
 
-Section in Build Phases: "Copy Files" - Add all of the frameworks you added to Xcode to the Copy Files Phase - see the result below (for TTS Watson service):
+Section in Build Phases: "Copy Files" - Add all of the frameworks you added to Xcode to the Copy Files Phase - see the result below (for Sentiment Analysis Watson service):
 
 ![alt text](https://github.com/blumareks/2016WoW/blob/master/images/TTSFrameworks_copyphase.png "Copy Files")
 
@@ -84,20 +85,21 @@ We will now update info.plist with the ability to call outside services of Watso
 ```xml
 <key>NSAppTransportSecurity</key>
 <dict>
-<key>NSExceptionDomains</key>
-<dict>
-<key>watsonplatform.net</key>
-<dict>
-<key>NSTemporaryExceptionRequiresForwardSecrecy</key>
-<false/>
-<key>NSIncludesSubdomains</key>
-<true/>
-<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-<true/>
-</dict>
-</dict>
+  <key>NSExceptionDomains</key>
+  <dict>
+    <key>watsonplatform.net</key>
+    <dict>
+      <key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+        <false/>
+      <key>NSIncludesSubdomains</key>
+        <true/>
+      <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+    </dict>
+  </dict>
 </dict>
 ```
+
 ![alt text](https://2.bp.blogspot.com/-5eM1XYycYJk/V0duGPihzsI/AAAAAAAAArw/777t2WdU39UoJv8IbIF_5lNMp1eLCeQpQCLcB/s1600/WhitelistingWatson.png "Copy Files")
 
 
