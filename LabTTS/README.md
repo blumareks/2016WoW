@@ -51,7 +51,7 @@ Right-click on the Segmented Control (contains three controls - on the right pan
 @IBOutlet weak var voiceSegment: UISegmentedControl!
 ```
 
-Let’s test the code we have written so far.
+### Let’s test the code we have written so far.
 
 We will now add some code to the speakButtonPressed method.
 ```swift
@@ -90,7 +90,7 @@ The sleep command is necessary to vocalize the spoken text before the thread is 
 
 The GUI is now working.  
 
-The next steps are:
+## The next steps are:
 - adding the carthage package manager to get Watson Developer Cloud SDK for iOS and running carthage update --platform iOS - see readme.md
 - extending the info.plist with access to watson.net over http
 ```xml
@@ -110,7 +110,11 @@ The next steps are:
 </dict>
 </dict>
 ```
-- getting import with Watson service
+- getting import with Watson service:
+```swift
+import TextToSpeechV1 //importing Watson TTS service 
+import AVFoundation   //importing AVFoundation for AVAudioPlayer
+```
 - getting key to Watson service
 - updating the code with the final part:
 ```swift
