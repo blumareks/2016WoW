@@ -61,7 +61,7 @@ The process will issue “Fetching”, “Checking out” and “Building scheme
 ### Add the SDK to the Xcode project
 
 Create a new Group in your Xcode project called "Framework" under the project name.
-And select all the framework files in the Carthage/Build/iOS/ directory of your project (Alamofire, AlamofireObjectMapper, HTTPStatusCodes, ObjectMapper, Starscream). Drag-and-drop those files from Finder into the new "Framework" group inside of your project in Xcode. When the dialog appears, make sure you deselect the option to copy items. This will create a reference to those Framework files without copying them.
+And select all the framework files in the Carthage/Build/iOS/ directory of your project (required Watson library framework, Alamofire, RestKit, Freddy, Starscream). Drag-and-drop those files from Finder into the new "Framework" group inside of your project in Xcode. When the dialog appears, make sure you deselect the option to copy items. This will create a reference to those Framework files without copying them.
 
 This is the list of the framework libraries:
 
