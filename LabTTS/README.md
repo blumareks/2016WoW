@@ -115,13 +115,13 @@ The GUI is now working.
 import TextToSpeechV1 //importing Watson TTS service 
 import AVFoundation   //importing AVFoundation for AVAudioPlayer
 ```
-- getting key to Watson service
+- getting the user and the password to the Watson TTS service
 - updating the code with the final part:
 ```swift
 //add Watson Service
 
-let username = "<user from Watson TTS service>"
-let password = "<password from Watson TTS service>"
+let username = "<user from Watson TTS service>" //the user from the step above
+let password = "<password from Watson TTS service>"  //the password from the step above
 let textToSpeech = TextToSpeech(username: username, password: password)
 
 let text = speakText.text!
