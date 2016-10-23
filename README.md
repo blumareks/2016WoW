@@ -1,6 +1,8 @@
 # 2016WoW
 Swift base examples for iOS apps using Watson in a quick espresso style.
 
+If you like it - give me a star!
+
 The prereqs:
 - XCode 8.0 or greater
 - Carthage (the package manager to get IBM Watson SDK) - please see below
