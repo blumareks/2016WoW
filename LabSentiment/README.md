@@ -1,7 +1,8 @@
 # My Cognitive App Sentiment
 
-Let's build our GUI
+If you like this - give me a star!
 
+Let's build our GUI
 Let’s begin by building a simple app with a submit button, an editable text field, and an output field.
 
 This video shows how we will build an iOS app in Xcode to prepare for the Sentiment Analysis:  https://youtu.be/JwdpzO1y8z4
@@ -18,24 +19,22 @@ Do the following steps in Main.storyboard to the code in the ViewController file
 ### 1. Connect the TextField
 
 In the Main.storyboard:
-Right-click on the TextField (contains "http://www.huffingtonpost.com/2010/06/22/iphone-4-review-the-worst_n_620714.html”)
-1.	Select New Reference Outlet Collection from drop-down list
-2.	Enter textField in the popup dialog.
-3.	Insert between Class ViewController and override… 
-4.	Click Connect
-5.	The result is: 
+Double click on the TextField (contains "http://www.huffingtonpost.com/2010/06/22/iphone-4-review-the-worst_n_620714.html")
+ 1.	Select New Reference Outlet Collection from drop-down list
+ 2.	Enter textField in the popup dialog.
+ 3.	Insert between Class ViewController and override… 
+ 4.	Click Connect
+ 5.	The result is: 
 ```swift
 @IBOutlet var textField: [UITextField]!
 ```
 
-
-The inserted text is:
-```swift
-@IBOutlet weak var textField: UITextField!
-```
-
 ### 2. Connect the Button
-
+ 1.	Select Touch up Inside from drop-down list
+ 2.	Enter speakButtonPressed in the popup dialog.
+ 3.	Insert before the end of the Class ViewController
+ 4.	Click Connect
+ 5.	The result is:
 
 The inserted text is:
 ```swift
@@ -97,27 +96,30 @@ For example:
 
 This URL is copied to the label field. Once we have added the Watson Service, Watson will return a Sentiment Analysis, which will be displayed in the Label Field.
 
-The next steps are:
+## The next steps are:
  - adding the carthage package manager to get Watson Developer Cloud SDK for iOS and running carthage update --platform iOS - see readme.md
  - extending the info.plist with access to watson.net over http
 ```xml
 <key>NSAppTransportSecurity</key>
 <dict>
-<key>NSExceptionDomains</key>
-<dict>
-<key>watsonplatform.net</key>
-<dict>
-<key>NSTemporaryExceptionRequiresForwardSecrecy</key>
-<false/>
-<key>NSIncludesSubdomains</key>
-<true/>
-<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-<true/>
-</dict>
-</dict>
+  <key>NSExceptionDomains</key>
+  <dict>
+    <key>watsonplatform.net</key>
+    <dict>
+      <key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+        <false/>
+      <key>NSIncludesSubdomains</key>
+        <true/>
+      <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+    </dict>
+  </dict>
 </dict>
 ```
 - getting import with Watson service
+```swift
+import AlchemyLanguageV1
+```
 - getting key to Watson service
 - updating the code with the final part:
 ```swift
