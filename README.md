@@ -74,6 +74,7 @@ This is the list of the framework libraries:
 ![framework libraries for TTS](https://github.com/blumareks/2016WoW/blob/master/images/TTSFrameworks.png "framework libraries for TTS")
 
 - and for the visual analysis:
+
 ![framework libraries for Visual](https://github.com/blumareks/2016WoW/blob/master/images/VisualFrameworks.png "framework libraries for Visual Analysis")
 
 
