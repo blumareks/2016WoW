@@ -64,14 +64,19 @@ Create a new Group in your Xcode project called "Framework" under the project na
 And select all the framework files in the Carthage/Build/iOS/ directory of your project (Alamofire, AlamofireObjectMapper, HTTPStatusCodes, ObjectMapper, Starscream). Drag-and-drop those files from Finder into the new "Framework" group inside of your project in Xcode. When the dialog appears, make sure you deselect the option to copy items. This will create a reference to those Framework files without copying them.
 
 This is the list of the framework libraries:
-![alt text](https://1.bp.blogspot.com/-zsEmgLOiZp8/VwB6Rx0FNRI/AAAAAAAAAnc/byvcBUMoObs0HzHKEEmPri1faszUWv31Q/s1600/Screenshot%2B2016-04-02%2B19.00.03.png "framework libraries")
+
+![framework libraries for sentiment](https://github.com/blumareks/2016WoW/blob/master/images/SentimentFrameworks.png "framework libraries for sentiment")
+
+and an alternative setup for framework libraries for Text To Speech:
+![framework libraries for TTS](https://github.com/blumareks/2016WoW/blob/master/images/TTSFrameworks.png "framework libraries for TTS")
+
 
 Build target. In the "Build Phases" tab, add a new Copy Files Phase and set its destination to "Frameworks".
 Copy all the frameworks that have been added one by one.
 
-Section in Build Phases: "Copy Files" - Add all of the frameworks you added to Xcode to the Copy Files Phase - see the result below:
+Section in Build Phases: "Copy Files" - Add all of the frameworks you added to Xcode to the Copy Files Phase - see the result below (for TTS Watson service):
 
-![alt text](https://2.bp.blogspot.com/-6-KWU48Y97w/VwB6SOToE0I/AAAAAAAAAnY/ygiZvHNGY5scrAxh7DGBdhAV12gnmdVWg/s1600/Screenshot%2B2016-04-02%2B19.00.29.png "Copy Files")
+![alt text](https://github.com/blumareks/2016WoW/blob/master/images/TTSFrameworks_copyphase.png "Copy Files")
 
 
 
