@@ -8,7 +8,7 @@ Let’s begin by building a simple app with a submit button, an editable text fi
 This video shows how we will build an iOS app in Xcode to prepare for the Sentiment Analysis:  https://youtu.be/JwdpzO1y8z4
 
 The GUI consists of a text field, a label and a button.  We will implement these in the storyboard.
-When the user presses the button, the text in the text field is sent to Watson which analysis it and returns an opinion which is entered in the label field.
+When the user presses the button, the URL in the text field is sent to Watson which analysis it and returns an opinion which is entered in the label field.
 In the first iteration we will take the text in the text field and simply echo it in the label field when we press the button.
 
 
@@ -19,7 +19,7 @@ Do the following steps in Main.storyboard to the code in the ViewController file
 ### 1. Connect the TextField
 
 In the Main.storyboard:
-Double click on the TextField (contains "http://www.huffingtonpost.com/2010/06/22/iphone-4-review-the-worst_n_620714.html")
+Double click on the TextField (enter our URL "http://www.huffingtonpost.com/2010/06/22/iphone-4-review-the-worst_n_620714.html")
  1.	Select New Reference Outlet Collection from drop-down list
  2.	Enter textField in the popup dialog.
  3.	Insert between Class ViewController and override… 
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
 ```
 
 
-The NSLog method will allow us to log our actions. And setting the textStatusLabel.text to textField.text will allow us to show the output from the textField in the Label field.
+The NSLog method will allow us to log our actions. And setting the textStatusLabel.text to textField.text will allow us to show the URL from the textField in the Label field.
 
 Now let’s test this by doing a build and execute our app.
 
