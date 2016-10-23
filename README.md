@@ -8,9 +8,9 @@ The prereqs:
 - Carthage (the package manager to get IBM Watson SDK) - please see below
 
 Please find the GUIs for the 3 SWIFT - Watson LABs:
-- [My Cognitive Sentiment]()
-- [My Cognitive Visual]()
-- [My Cognitive Text-to-Speech]()
+- [My Cognitive Sentiment](https://github.com/blumareks/2016WoW/tree/master/LabSentiment)
+- [My Cognitive Visual](https://github.com/blumareks/2016WoW/tree/master/LabVisual)
+- [My Cognitive Text-to-Speech](https://github.com/blumareks/2016WoW/tree/master/LabTTS)
 
 As soon as you fork each of the labs you might want to run Carthage to enable Watson SDK frameworks needed in your Swift application. You need to run with the following command from the command line at the root of the project: 
 ```
