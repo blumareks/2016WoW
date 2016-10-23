@@ -65,11 +65,16 @@ And select all the framework files in the Carthage/Build/iOS/ directory of your 
 
 This is the list of the framework libraries:
 
+- for **Sentiment analysis**
+
 ![framework libraries for sentiment](https://github.com/blumareks/2016WoW/blob/master/images/SentimentFrameworks.png "framework libraries for sentiment")
 
-and an alternative setup for framework libraries for Text To Speech:
+- an alternative setup for framework libraries for **Text To Speech**:
 
 ![framework libraries for TTS](https://github.com/blumareks/2016WoW/blob/master/images/TTSFrameworks.png "framework libraries for TTS")
+
+- and for the visual analysis:
+![framework libraries for Visual](https://github.com/blumareks/2016WoW/blob/master/images/VisualFrameworks.png "framework libraries for Visual Analysis")
 
 
 Build target. In the "Build Phases" tab, add a new Copy Files Phase and set its destination to "Frameworks".
