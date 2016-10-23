@@ -6,9 +6,11 @@ We may want to tall our project “Text to Speech” or something else descripti
 
 So we’ll begin by building a simple app with an editable text field and a button.
 This time we will not need a Label field for the output, because Watson will provide speech output
-So when the user presses the button, the text in the text field is sent to Watson which analysis it and returns a spoken version of the text
-In the first iteration we will take the text in the text field and simply echo it in the debug field when we press the button. Just so we can see that the GUI works correctly
-So we begin by dragging and dropping a Text Field and a Button into the Storyboard. Then after we have positioned them to our liking, we will connect the Text field in the Main.storyboard to the code in the ViewController file
+So when the user presses the button, the text in the text field is sent to Watson which analysis it and returns a spoken version of the text.
+In the first iteration we will take the text in the text field and simply echo it in the debug field when we press the button. Just so we can see that the GUI works correctly.
+So we begin by dragging and dropping a Text Field and a Button into the Storyboard. In addition we might want to add a segmented control to manage couple voices (Michael for Watson typical voice, Allyson, and Brit sounding Kate).
+
+Then after we have positioned them to our liking, we will connect the text field, the button and the segmented control in the Main.storyboard to the code in the ViewController file
 
 ### 1. TextField
 
@@ -37,6 +39,17 @@ Right-click on the TextField (contains “Watson Speaking”)
 @IBAction func speakButtonPressed(sender: AnyObject) {
 }
 ```
+### 3. Let's add the Segmented Control for voices
+Right-click on the Segmented Control (contains three controls - on the right pane - in the Atributes Inspector - I incresed the number of segments to 3 and added the title "Kate" to the segment no 2)
+1.	Select New Reference Outlet Collection from drop-down list
+2.	Enter voiceSegment in the popup dialog.
+3.	Insert between Class ViewController
+4.	Click Connect
+5.	The result is: 
+
+```swift
+@IBOutlet weak var voiceSegment: UISegmentedControl!
+```
 
 Let’s test the code we have written so far.
 
@@ -47,6 +60,7 @@ Import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var voiceSegment: UISegmentedControl!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +73,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func speakButtonPressed(sender: AnyObject) {
-        NSLog(“Speak button pressed, speak:” + speakText.text!)
+        NSLog(“Speak button pressed, speak:” + speakText.text!  + "voice segment" + voiceSegment.selectedSegmentIndex.description)
         
        //add Watson Service         
 
