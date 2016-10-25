@@ -18,8 +18,16 @@ carthage update --platform iOS
 ```
 
 The next step is to add required frameworks
+
+### Add support to Legacy Swift (2.3)
 Alternatively you might want to follow the docs and create your own app from scratch. In such a case make sure to setup the Swift 2.3 environment paramenter - since Watson Developer Cloud SDK for iOS is using this release of Swift.
-In order to do it in the first window after creating a project set up in the Deployment Info section the Deployment Target from 10 (Swift 3.0) to 9.3 (Swift 2.3):
+
+Make option to support **Legacy Swift** (ie. Swift 2.3):
+
+![Adding support to Swift 2.3](https://github.com/blumareks/2016WoW/blob/master/images/LegacySwiftOn.png "Changing to legacy Swift 2.3")
+
+
+In addition you might want to setup the target to lower iOS: in the first window after creating a project set up in the Deployment Info section the Deployment Target from 10 (Swift 3.0) to 9.3 (Swift 2.3):
 
 ![Changing from Swift 3.0](https://github.com/blumareks/2016WoW/blob/master/images/setSwift_23_from_30.png "Changing from Swift 3.0")
 
