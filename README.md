@@ -18,7 +18,18 @@ carthage update --platform iOS
 ```
 
 The next step is to add required frameworks
+Alternatively you might want to follow the docs and create your own app from scratch. In such a case make sure to setup the Swift 2.3 environment paramenter - since Watson Developer Cloud SDK for iOS is using this release of Swift.
+In order to do it in the first window after creating a project set up in the deployment window the Deployment Info from 10 (Swift 3.0)
 
+![Changing from Swift 3.0](https://github.com/blumareks/2016WoW/blob/master/images/setSwift_23_from_30.png "Changing from Swift 3.0")
+
+Select the choice 9.3 from the menu:
+
+![selectin the choice 9.3 from the menu](https://github.com/blumareks/2016WoW/blob/master/images/setSwift_23_menu.png "selecting the choice from the menu")
+
+Into 9.3 (Swift 2.3)
+
+![Into 9.3 - Swift 2.3](https://github.com/blumareks/2016WoW/blob/master/images/setSwift_23_done.png "Into 9.3 - Swift 2.3")
 
 ## Installing and running Carthage
 The initial setup of the Carthage is the following:
